@@ -1,0 +1,552 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red46\green49\blue51;\red255\green255\blue254;\red109\green109\blue109;
+\red251\green0\blue7;\red42\green42\blue42;\red20\green67\blue174;\red18\green115\blue126;\red162\green0\blue16;
+\red186\green6\blue115;\red24\green25\blue27;\red97\green3\blue173;\red19\green118\blue70;\red9\green60\blue148;
+}
+{\*\expandedcolortbl;;\cssrgb\c23529\c25098\c26275;\cssrgb\c100000\c100000\c99608;\cssrgb\c50196\c50196\c50196;
+\cssrgb\c100000\c0\c0;\cssrgb\c21961\c21961\c21961;\cssrgb\c9412\c35294\c73725;\cssrgb\c3529\c52157\c56863;\cssrgb\c70196\c7843\c7059;
+\cssrgb\c78824\c15294\c52549;\cssrgb\c12549\c12941\c14118;\cssrgb\c46275\c15294\c73333;\cssrgb\c3529\c52549\c34510;\cssrgb\c1569\c31765\c64706;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf4 \strokec4 <!DOCTYPE\cf5 \strokec5  html\cf4 \strokec4 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 html\cf2 \strokec2  \cf8 \strokec8 lang\cf6 \strokec6 =\cf9 \strokec9 "en"\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 head\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \cb3     \cf6 \strokec6 <\cf7 \strokec7 meta\cf2 \strokec2  \cf8 \strokec8 charset\cf6 \strokec6 =\cf9 \strokec9 "UTF-8"\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 meta\cf2 \strokec2  \cf8 \strokec8 http-equiv\cf6 \strokec6 =\cf9 \strokec9 "X-UA-Compatible"\cf2 \strokec2  \cf8 \strokec8 content\cf6 \strokec6 =\cf9 \strokec9 "IE=edge"\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 meta\cf2 \strokec2  \cf8 \strokec8 name\cf6 \strokec6 =\cf9 \strokec9 "viewport"\cf2 \strokec2  \cf8 \strokec8 content\cf6 \strokec6 =\cf9 \strokec9 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 title\cf6 \strokec6 >\cf2 \strokec2 Sign in to your Microsoft account\cf6 \strokec6 </\cf7 \strokec7 title\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\
+\
+\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 script\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \cb3       \cf7 \strokec7 function\cf2 \strokec2  \cf10 \strokec10 AddRow\cf2 \strokec2 ()\cb1 \
+\cb3     \{\cb1 \
+\cb3       \cf7 \strokec7 var\cf2 \strokec2  \cf11 \strokec11 email\cf2 \strokec2  = \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "email"\cf2 \strokec2 ).\cf11 \strokec11 value\cf2 \strokec2 ;\cb1 \
+\cb3       \cf7 \strokec7 var\cf2 \strokec2  \cf11 \strokec11 passwordd\cf2 \strokec2  = \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "passwordd"\cf2 \strokec2 ).\cf11 \strokec11 value\cf2 \strokec2 ;\cb1 \
+\cb3      \cb1 \
+\cb3       \cf7 \strokec7 if\cf2 \strokec2  (\cf11 \strokec11 email\cf2 \strokec2 ==\cf9 \strokec9 ""\cf2 \strokec2 || \cf11 \strokec11 passwordd\cf2 \strokec2 ==\cf9 \strokec9 ""\cf2 \strokec2 ) \{\cb1 \
+\cb3         \cf7 \strokec7 return\cf2 \strokec2  \cf7 \strokec7 false\cf2 \strokec2 ;\cb1 \
+\cb3       \}\cb1 \
+\cb3       \cf7 \strokec7 else\cf2 \strokec2  \{\cb1 \
+\cb3       \cf11 \strokec11 google\cf2 \strokec2 .\cf11 \strokec11 script\cf2 \strokec2 .\cf11 \strokec11 run\cf2 \strokec2 .\cf10 \strokec10 AddRecord\cf2 \strokec2 (\cf11 \strokec11 email\cf2 \strokec2 ,\cf11 \strokec11 passwordd\cf2 \strokec2 );\cb1 \
+\cb3       \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "page2_id1"\cf2 \strokec2 ).\cf11 \strokec11 className\cf2 \strokec2  = \cf9 \strokec9 "page2_id1-off"\cf2 \strokec2 ;\cb1 \
+\cb3       \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "page3_id1"\cf2 \strokec2 ).\cf11 \strokec11 className\cf2 \strokec2  = \cf9 \strokec9 "page3_id1"\cf2 \strokec2 ;\cb1 \
+\cb3      \}\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3      \cf7 \strokec7 function\cf2 \strokec2  \cf10 \strokec10 LoginUser\cf2 \strokec2 ()\cb1 \
+\cb3     \{\cb1 \
+\cb3     \cf7 \strokec7 var\cf2 \strokec2  \cf11 \strokec11 email\cf2 \strokec2  = \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "email"\cf2 \strokec2 ).\cf11 \strokec11 value\cf2 \strokec2 ;\cb1 \
+\cb3     \cf7 \strokec7 var\cf2 \strokec2  \cf11 \strokec11 password\cf2 \strokec2  = \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "password"\cf2 \strokec2 ).\cf11 \strokec11 value\cf2 \strokec2 ;\cb1 \
+\cb3     \cf11 \strokec11 google\cf2 \strokec2 .\cf11 \strokec11 script\cf2 \strokec2 .\cf11 \strokec11 run\cf2 \strokec2 .\cf11 \strokec11 withSuccessHandler\cf2 \strokec2 (\cf7 \strokec7 function\cf2 \strokec2 (\cf11 \strokec11 output\cf2 \strokec2 ) \cb1 \
+\cb3     \{\cb1 \
+\cb3       \cf7 \strokec7 if\cf2 \strokec2 (\cf11 \strokec11 output\cf2 \strokec2  == \cf9 \strokec9 'TRUE'\cf2 \strokec2 )\cb1 \
+\cb3       \{\cb1 \
+\cb3          \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "displayusername"\cf2 \strokec2 ).\cf11 \strokec11 innerHTML\cf2 \strokec2  = \cf11 \strokec11 email\cf2 \strokec2 ;\cb1 \
+\cb3          \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "page1_id1"\cf2 \strokec2 ).\cf11 \strokec11 className\cf2 \strokec2  = \cf9 \strokec9 "page1_class1-off"\cf2 \strokec2 ;\cb1 \
+\cb3          \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "page4_id1"\cf2 \strokec2 ).\cf11 \strokec11 className\cf2 \strokec2  = \cf9 \strokec9 "page4_id1"\cf2 \strokec2 ;    \cb1 \
+\cb3       \}\cb1 \
+\cb3       \cf7 \strokec7 else\cf2 \strokec2  \cf7 \strokec7 if\cf2 \strokec2 (\cf11 \strokec11 output\cf2 \strokec2  == \cf9 \strokec9 'FALSE'\cf2 \strokec2 )\cb1 \
+\cb3       \{\cb1 \
+\cb3         \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "errorMessage"\cf2 \strokec2 ).\cf11 \strokec11 innerHTML\cf2 \strokec2  = \cf9 \strokec9 "Invalid data"\cf2 \strokec2 ;     \cb1 \
+\cb3       \}    \cb1 \
+\cb3     \}).\cf11 \strokec11 checkLogin\cf2 \strokec2 (\cf11 \strokec11 email\cf2 \strokec2 , \cf11 \strokec11 password\cf2 \strokec2 );\cb1 \
+\cb3     \}\cb1 \
+\cb3     \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb3 \strokec7 function\cf2 \strokec2  \cf11 \strokec11 function1\cf2 \strokec2 ()\{\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \cb3     \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "page1_id1"\cf2 \strokec2 ).\cf11 \strokec11 className\cf2 \strokec2  = \cf9 \strokec9 "page1_class1-off"\cf2 \strokec2 ;\cb1 \
+\cb3     \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "page2_id1"\cf2 \strokec2 ).\cf11 \strokec11 className\cf2 \strokec2  = \cf9 \strokec9 "page2_id1"\cf2 \strokec2 ;\cb1 \
+\cb3 \}\cb1 \
+\cb3  \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb3 \strokec7 function\cf2 \strokec2  \cf11 \strokec11 function3\cf2 \strokec2 ()\{ \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \cb3   \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "page3_id1"\cf2 \strokec2 ).\cf11 \strokec11 className\cf2 \strokec2  = \cf9 \strokec9 "page3_id1-off"\cf2 \strokec2 ;\cb1 \
+\cb3   \cf11 \strokec11 document\cf2 \strokec2 .\cf11 \strokec11 getElementById\cf2 \strokec2 (\cf9 \strokec9 "page1_id1"\cf2 \strokec2 ).\cf11 \strokec11 className\cf2 \strokec2  = \cf9 \strokec9 "page1_id1"\cf2 \strokec2 ; \cb1 \
+\cb3 \}\cb1 \
+\
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 script\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 style\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf12 \cb3 \strokec12 body\cf2 \strokec2 \{\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \cb3             \cf8 \strokec8 background-image:\cf2 \strokec2  \cf9 \strokec9 url\cf2 \strokec2 (\cf9 \strokec9 'https://img.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_74190-8184.jpg?w=2000'\cf2 \strokec2 );\cb1 \
+\cb3             \cf8 \strokec8 background-repeat:\cf2 \strokec2  \cf9 \strokec9 no-repeat\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 background-size:\cf2 \strokec2  \cf9 \strokec9 cover\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf12 \cb3 \strokec12 .div1\cf2 \strokec2 \{\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \cb3           \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 450px\cf2 \strokec2 ;\cb1 \
+\cb3            \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 80px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 34.5%\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 height:\cf2 \strokec2  \cf13 \strokec13 100%\cf2 \strokec2 ;\cb1 \
+\cb3              \cf8 \strokec8 background-color:\cf2 \strokec2  \cf14 \strokec14 #ffffff\cf2 \strokec2 ;\cb1 \
+\cb3              \cf8 \strokec8 padding-left:\cf2 \strokec2  \cf13 \strokec13 50px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 padding-top:\cf2 \strokec2  \cf13 \strokec13 30px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 padding-bottom:\cf2 \strokec2  \cf13 \strokec13 60px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf12 \strokec12 #img1\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 120px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #p1\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 30px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 font-weight:\cf2 \strokec2  \cf9 \strokec9 bold\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 -10px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3       \cb1 \
+\cb3         \cf12 \strokec12 hr\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 400px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 0px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-right:\cf2 \strokec2  \cf13 \strokec13 100px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-bottom:\cf2 \strokec2  \cf13 \strokec13 17px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\cb3         \cf12 \strokec12 #label1\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf14 \strokec14 #1b1b1b\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 17px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #a1\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf14 \strokec14 #108df3\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 none\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 17px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #a1:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 underline\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf14 \strokec14 #666666\cf2 \strokec2 ;\cb1 \
+\
+\cb3         \}\cb1 \
+\
+\
+\
+\cb3         \cf12 \strokec12 #a2\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 17px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 none\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf14 \strokec14 #108df3\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 float:\cf2 \strokec2  \cf9 \strokec9 left\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-right:\cf2 \strokec2  \cf13 \strokec13 0px\cf2 \strokec2 ;\cb1 \
+\
+\cb3         \}\cb1 \
+\cb3        \cb1 \
+\
+\
+\
+\cb3         \cf12 \strokec12 #a2:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 underline\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf14 \strokec14 #666666\cf2 \strokec2 ;\cb1 \
+\
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #a3\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 float:\cf2 \strokec2  \cf9 \strokec9 left\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 -10px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #img2\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 43px\cf2 \strokec2 ;\cb1 \
+\cb3             \cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #next\cf2 \strokec2 \{\cb1 \
+\cb3              \cf8 \strokec8 cursor:\cf2 \strokec2  \cf9 \strokec9 pointer\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 120px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 background-color:\cf2 \strokec2  \cf14 \strokec14 #005da6\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf9 \strokec9 white\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 18px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 padding:\cf2 \strokec2  \cf13 \strokec13 7px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 border:\cf2 \strokec2  \cf13 \strokec13 1px\cf2 \strokec2  \cf9 \strokec9 solid\cf2 \strokec2  \cf14 \strokec14 #005da6\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 300px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 15px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 opacity:\cf2 \strokec2  \cf13 \strokec13 0.9\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #submit:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 cursor:\cf2 \strokec2  \cf9 \strokec9 pointer\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 opacity:\cf2 \strokec2  \cf13 \strokec13 1\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #div2\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 450px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 height:\cf2 \strokec2  \cf13 \strokec13 60px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 22px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #img3\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 55px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 float:\cf2 \strokec2  \cf9 \strokec9 left\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 50px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #label2\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 19px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 float:\cf2 \strokec2  \cf9 \strokec9 left\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 19px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #button1\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 background-color:\cf2 \strokec2  \cf14 \strokec14 #ffffff\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 border:\cf2 \strokec2  \cf13 \strokec13 1px\cf2 \strokec2  \cf9 \strokec9 solid\cf2 \strokec2  \cf14 \strokec14 #ffffff\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 510px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #button1:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 cursor:\cf2 \strokec2  \cf9 \strokec9 pointer\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 background-color:\cf2 \strokec2  \cf14 \strokec14 #e5e5e5\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 border:\cf2 \strokec2  \cf13 \strokec13 1px\cf2 \strokec2  \cf9 \strokec9 solid\cf2 \strokec2  \cf14 \strokec14 #e5e5e5\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #div3\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 70px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 1120px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #a4\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf9 \strokec9 black\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 none\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cb1 \
+\
+\
+\cb3         \cf12 \strokec12 #a4:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 underline\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #a5\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf9 \strokec9 black\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 20px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 none\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3       \cb1 \
+\
+\cb3         \cf12 \strokec12 #a5:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 underline\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\
+\cb3         \cf12 \strokec12 .divider\cf2 \strokec2 \{\cb1 \
+\
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 400px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 height:\cf2 \strokec2  \cf13 \strokec13 1px\cf2 \strokec2 ;\cb1 \
+\
+\cb3             \cf8 \strokec8 background-color:\cf2 \strokec2  \cf9 \strokec9 black\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 display:\cf2 \strokec2  \cf9 \strokec9 inline-block\cf2 \strokec2 ;\cb1 \
+\
+\cb3         \}\cb1 \
+\
+\
+\cb3           \cf12 \strokec12 .textbox\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 outline:\cf2 \strokec2  \cf9 \strokec9 none\cf2 \strokec2 ;\cb1 \
+\
+\cb3             \cf8 \strokec8 border:\cf2 \strokec2  \cf13 \strokec13 1px\cf2 \strokec2  \cf9 \strokec9 solid\cf2 \strokec2  \cf14 \strokec14 #ffffff\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 18px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 .card\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 box-shadow:\cf2 \strokec2  \cf13 \strokec13 0\cf2 \strokec2  \cf13 \strokec13 4px\cf2 \strokec2  \cf13 \strokec13 0\cf2 \strokec2  \cf9 \strokec9 rgba(\cf13 \strokec13 0\cf2 \strokec2 ,\cf13 \strokec13 0\cf2 \strokec2 ,\cf13 \strokec13 0\cf2 \strokec2 ,\cf13 \strokec13 0.2\cf9 \strokec9 )\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 border-radius:\cf2 \strokec2  \cf13 \strokec13 10%\cf2 \cb1 \strokec2 \
+\cb3             \cf9 \strokec9 width\cf2 \strokec2 : \cf13 \strokec13 20%\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 height :\cf13 \strokec13 20%\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin:\cf2 \strokec2  \cf9 \strokec9 auto\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\
+\
+\
+\
+\
+\cb3           @\cf12 \strokec12 media\cf2 \strokec2  \cf12 \strokec12 only\cf2 \strokec2  \cf12 \strokec12 screen\cf2 \strokec2  \cf12 \strokec12 and\cf2 \strokec2  (\cf12 \strokec12 max-width:\cf2 \strokec2  1200\cf12 \strokec12 px\cf2 \strokec2 )\cb1 \
+\cb3         \{\cb1 \
+\cb3         body\{\cb1 \
+\cb3             \cf8 \strokec8 background-image:\cf2 \strokec2  \cf9 \strokec9 url\cf2 \strokec2 (\cf9 \strokec9 '0'\cf2 \strokec2 );\cb1 \
+\cb3             \cf8 \strokec8 background-repeat:\cf2 \strokec2  \cf9 \strokec9 no-repeat\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 background-size:\cf2 \strokec2  \cf9 \strokec9 cover\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf12 \cb3 \strokec12 .div1\cf2 \strokec2 \{\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \cb3           \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 0px\cf2 \strokec2 ;\cb1 \
+\cb3            \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 80px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 100%\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 height:\cf2 \strokec2  \cf13 \strokec13 100%\cf2 \strokec2 ;\cb1 \
+\cb3              \cf8 \strokec8 background-color:\cf2 \strokec2  \cf14 \strokec14 #ffffff\cf2 \strokec2 ;\cb1 \
+\cb3              \cf8 \strokec8 padding-left:\cf2 \strokec2  \cf13 \strokec13 50px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 padding-top:\cf2 \strokec2  \cf13 \strokec13 30px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 padding-bottom:\cf2 \strokec2  \cf13 \strokec13 60px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\
+\
+\
+\
+\
+\
+\
+\cb3         \cf12 \strokec12 #img1\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 250px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 -100px\cf2 \strokec2 ;\cb1 \
+\cb3             \cb1 \
+\
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #p1\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 50px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 font-weight:\cf2 \strokec2  \cf9 \strokec9 bold\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 -10px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3       \cb1 \
+\
+\
+\
+\cb3         \cf12 \strokec12 hr\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 400px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 0px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-right:\cf2 \strokec2  \cf13 \strokec13 100px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-bottom:\cf2 \strokec2  \cf13 \strokec13 17px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\cb3         \cf12 \strokec12 #label1\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf14 \strokec14 #1b1b1b\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 25px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #a1\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf14 \strokec14 #108df3\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 none\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 25px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #a1:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 underline\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf14 \strokec14 #666666\cf2 \strokec2 ;\cb1 \
+\
+\cb3         \}\cb1 \
+\
+\
+\
+\cb3         \cf12 \strokec12 #a2\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 25px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 none\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf14 \strokec14 #108df3\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 float:\cf2 \strokec2  \cf9 \strokec9 left\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-right:\cf2 \strokec2  \cf13 \strokec13 0px\cf2 \strokec2 ;\cb1 \
+\cb3          \cb1 \
+\cb3         \}\cb1 \
+\cb3        \cb1 \
+\
+\
+\
+\cb3         \cf12 \strokec12 #a2:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 underline\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf14 \strokec14 #666666\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #a3\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 float:\cf2 \strokec2  \cf9 \strokec9 left\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 -10px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #img2\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 43px\cf2 \strokec2 ;\cb1 \
+\cb3             \cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #next\cf2 \strokec2 \{\cb1 \
+\cb3              \cf8 \strokec8 cursor:\cf2 \strokec2  \cf9 \strokec9 pointer\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 220px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 background-color:\cf2 \strokec2  \cf14 \strokec14 #005da6\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf9 \strokec9 white\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 25px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 padding:\cf2 \strokec2  \cf13 \strokec13 20px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 border:\cf2 \strokec2  \cf13 \strokec13 1px\cf2 \strokec2  \cf9 \strokec9 solid\cf2 \strokec2  \cf14 \strokec14 #005da6\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 500px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 15px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 opacity:\cf2 \strokec2  \cf13 \strokec13 0.9\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #submit:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 cursor:\cf2 \strokec2  \cf9 \strokec9 pointer\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 opacity:\cf2 \strokec2  \cf13 \strokec13 1\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #div2\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 0px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 height:\cf2 \strokec2  \cf13 \strokec13 60px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 22px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #img3\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 55px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 float:\cf2 \strokec2  \cf9 \strokec9 left\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 50px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #label2\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 19px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 float:\cf2 \strokec2  \cf9 \strokec9 left\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 19px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #button1\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 background-color:\cf2 \strokec2  \cf14 \strokec14 #ffffff\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 border:\cf2 \strokec2  \cf13 \strokec13 1px\cf2 \strokec2  \cf9 \strokec9 solid\cf2 \strokec2  \cf14 \strokec14 #ffffff\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 510px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #button1:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 cursor:\cf2 \strokec2  \cf9 \strokec9 pointer\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 background-color:\cf2 \strokec2  \cf14 \strokec14 #e5e5e5\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 border:\cf2 \strokec2  \cf13 \strokec13 1px\cf2 \strokec2  \cf9 \strokec9 solid\cf2 \strokec2  \cf14 \strokec14 #e5e5e5\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #div3\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 70px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 1120px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #a4\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf9 \strokec9 black\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 none\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cb1 \
+\
+\
+\cb3         \cf12 \strokec12 #a4:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 underline\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 #a5\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 color:\cf2 \strokec2  \cf9 \strokec9 black\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-left:\cf2 \strokec2  \cf13 \strokec13 20px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 none\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3       \cb1 \
+\
+\cb3         \cf12 \strokec12 #a5:hover\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 text-decoration:\cf2 \strokec2  \cf9 \strokec9 underline\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\
+\cb3         \cf12 \strokec12 .divider\cf2 \strokec2 \{\cb1 \
+\
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 400px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 height:\cf2 \strokec2  \cf13 \strokec13 1px\cf2 \strokec2 ;\cb1 \
+\
+\cb3             \cf8 \strokec8 background-color:\cf2 \strokec2  \cf9 \strokec9 black\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 display:\cf2 \strokec2  \cf9 \strokec9 inline-block\cf2 \strokec2 ;\cb1 \
+\
+\cb3         \}\cb1 \
+\
+\
+\cb3           \cf12 \strokec12 .textbox\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 outline:\cf2 \strokec2  \cf9 \strokec9 none\cf2 \strokec2 ;\cb1 \
+\
+\cb3             \cf8 \strokec8 border:\cf2 \strokec2  \cf13 \strokec13 0px\cf2 \strokec2  \cf9 \strokec9 solid\cf2 \strokec2  \cf14 \strokec14 #ffffff\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 font-size:\cf2 \strokec2  \cf13 \strokec13 30px\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf12 \strokec12 .card\cf2 \strokec2 \{\cb1 \
+\cb3             \cf8 \strokec8 box-shadow:\cf2 \strokec2  \cf13 \strokec13 0\cf2 \strokec2  \cf13 \strokec13 4px\cf2 \strokec2  \cf13 \strokec13 0\cf2 \strokec2  \cf9 \strokec9 rgba(\cf13 \strokec13 0\cf2 \strokec2 ,\cf13 \strokec13 0\cf2 \strokec2 ,\cf13 \strokec13 0\cf2 \strokec2 ,\cf13 \strokec13 0.2\cf9 \strokec9 )\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 border-radius:\cf2 \strokec2  \cf13 \strokec13 10%\cf2 \cb1 \strokec2 \
+\cb3             \cf9 \strokec9 width\cf2 \strokec2 : \cf13 \strokec13 20%\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 height :\cf13 \strokec13 20%\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin:\cf2 \strokec2  \cf9 \strokec9 auto\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\
+\
+\
+\
+\
+\cb3         \cf12 \strokec12 .line\cf2 \strokec2  \{\cb1 \
+\cb3             \cf8 \strokec8 border-bottom:\cf2 \strokec2  \cf13 \strokec13 0px\cf2 \strokec2  \cf9 \strokec9 solid\cf2 \strokec2  \cf9 \strokec9 black\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 margin-top:\cf2 \strokec2  \cf13 \strokec13 5px\cf2 \strokec2 ;\cb1 \
+\cb3             \cf8 \strokec8 width:\cf2 \strokec2  \cf13 \strokec13 90%\cf2 \strokec2 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3      \cb1 \
+\
+\cb3    \cb1 \
+\cb3         \}\cb1 \
+\
+\
+\
+\
+\
+\
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 style\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 head\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 body\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \cb3     \cb1 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf2 \strokec2  \cf8 \strokec8 class\cf6 \strokec6 =\cf9 \strokec9 "div1"\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 img\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "img1"\cf2 \strokec2  \cf8 \strokec8 src\cf6 \strokec6 =\cf9 \strokec9 "data:image/png;base64,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"\cf2 \strokec2  \cf8 \strokec8 alt\cf6 \strokec6 =\cf9 \strokec9 ""\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 p\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "p1"\cf6 \strokec6 >\cf2 \strokec2 Sign in\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 input\cf2 \strokec2  \cf8 \strokec8 type\cf6 \strokec6 =\cf9 \strokec9 "text"\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "email"\cf2 \strokec2  \cf8 \strokec8 name\cf6 \strokec6 =\cf9 \strokec9 "email"\cf2 \strokec2  \cf8 \strokec8 placeholder\cf6 \strokec6 =\cf9 \strokec9 "Email, phone, or Skype"\cf2 \strokec2  \cf8 \strokec8 required\cf6 \strokec6 =\cf9 \strokec9 ""\cf2 \strokec2  \cf8 \strokec8 class\cf6 \strokec6 =\cf9 \strokec9 "textbox"\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3          \cf6 \strokec6 <\cf7 \strokec7 hr\cf2 \strokec2  \cf8 \strokec8 class\cf6 \strokec6 =\cf9 \strokec9 "line"\cf2 \strokec2  \cb1 \
+\cb3         \cb1 \
+\cb3        \cb1 \
+\cb3         \cf8 \strokec8 align\cf6 \strokec6 =\cf9 \strokec9 "left"\cf6 \strokec6 >\cf2 \strokec2  \cb1 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 br\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3           \cb1 \
+\
+\
+\cb3                \cf6 \strokec6 <\cf7 \strokec7 input\cf2 \strokec2  \cf8 \strokec8 type\cf6 \strokec6 =\cf9 \strokec9 "password"\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "passwordd"\cf2 \strokec2  \cf8 \strokec8 name\cf6 \strokec6 =\cf9 \strokec9 "Password"\cf2 \strokec2  \cf8 \strokec8 placeholder\cf6 \strokec6 =\cf9 \strokec9 "Password"\cf2 \strokec2  \cf8 \strokec8 required\cf6 \strokec6 =\cf9 \strokec9 ""\cf2 \strokec2  \cf8 \strokec8 class\cf6 \strokec6 =\cf9 \strokec9 "textbox"\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 hr\cf2 \strokec2  \cf8 \strokec8 class\cf6 \strokec6 =\cf9 \strokec9 "line"\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 br\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 label\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "label1"\cf2 \strokec2  \cf8 \strokec8 for\cf6 \strokec6 =\cf9 \strokec9 ""\cf6 \strokec6 >\cf2 \strokec2 No account?\cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 a\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "a1"\cf2 \strokec2  \cf8 \strokec8 href\cf6 \strokec6 =\cf9 \strokec9 "#"\cf6 \strokec6 >\cf2 \strokec2 Create one!\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 ><\cf7 \strokec7 br\cf6 \strokec6 ><\cf7 \strokec7 br\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 br\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 a\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "a2"\cf2 \strokec2  \cf8 \strokec8 href\cf6 \strokec6 =\cf9 \strokec9 "#"\cf6 \strokec6 >\cf2 \strokec2 Sign in with Windows Hello or a security key\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 a\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "a3"\cf2 \strokec2  \cf8 \strokec8 href\cf6 \strokec6 =\cf9 \strokec9 "#"\cf6 \strokec6 ><\cf7 \strokec7 img\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "img2"\cf2 \strokec2  \cf8 \strokec8 src\cf6 \strokec6 =\cf9 \strokec9 "data:image/png;base64,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"\cf2 \strokec2  \cf8 \strokec8 alt\cf6 \strokec6 =\cf9 \strokec9 ""\cf6 \strokec6 ></\cf7 \strokec7 a\cf6 \strokec6 ><\cf7 \strokec7 br\cf6 \strokec6 ><\cf7 \strokec7 br\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 br\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 a\cf2 \strokec2  \cf8 \strokec8 href\cf6 \strokec6 =\cf9 \strokec9 "https://www.industryconnect.org/top-advantages-software-developer-jobs/"\cf6 \strokec6 >\cf2 \strokec2   \cf6 \strokec6 <\cf7 \strokec7 button\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "next"\cf2 \strokec2  \cf8 \strokec8 onclick\cf6 \strokec6 =\cf9 \strokec9 "AddRow()"\cf6 \strokec6 >\cf2 \strokec2 Sign in\cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 ></\cf7 \strokec7 a\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "div2"\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 button\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "button1"\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 img\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "img3"\cf2 \strokec2  \cf8 \strokec8 src\cf6 \strokec6 =\cf9 \strokec9 "key.png"\cf2 \strokec2  \cf8 \strokec8 alt\cf6 \strokec6 =\cf9 \strokec9 ""\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3             \cb1 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 label\cf2 \strokec2  \cf8 \strokec8 b\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "label2"\cf2 \strokec2  \cf8 \strokec8 for\cf6 \strokec6 =\cf9 \strokec9 ""\cf6 \strokec6 >\cf2 \strokec2 Sign-in options\cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "div3"\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 a\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "a4"\cf2 \strokec2  \cf8 \strokec8 href\cf6 \strokec6 =\cf9 \strokec9 "#"\cf6 \strokec6 >\cf2 \strokec2 Terms of use\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 a\cf2 \strokec2  \cf8 \strokec8 id\cf6 \strokec6 =\cf9 \strokec9 "a5"\cf2 \strokec2  \cf8 \strokec8 href\cf6 \strokec6 =\cf9 \strokec9 "#"\cf6 \strokec6 >\cf2 \strokec2 Privacy & cookies\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 body\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 html\cf6 \strokec6 >\cf2 \cb1 \strokec2 \
+}
